@@ -1,0 +1,17 @@
+site_name: Reset Docs
+site_url: https://reset-bank.com/docs
+
+
+theme:
+  name: material
+  language: en
+  favicon: images/favicon.png
+  logo: assets/logo.png
+  features:
+    - navigation.top
+
+plugins:
+  - macros
+
+extra:
+  homepage: https://reset-bank.com/docs
