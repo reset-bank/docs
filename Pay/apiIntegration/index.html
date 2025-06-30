@@ -1,0 +1,737 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://reset-bank.com/docs/Pay/apiIntegration/">
+      
+      
+        <link rel="prev" href="../aGettingStarted/">
+      
+      
+        <link rel="next" href="../apiSignature/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>How to integrate our API - Reset Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-integrate-our-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://reset-bank.com/docs" title="Reset Docs" class="md-header__button md-logo" aria-label="Reset Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Reset Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              How to integrate our API
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://reset-bank.com/docs" title="Reset Docs" class="md-nav__button md-logo" aria-label="Reset Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Reset Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome to Reset Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pay
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Pay
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aGettingStarted/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    How to integrate our API
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to integrate our API
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#account-registration-for-api-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Account Registration for API Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-integration-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Integration Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Integration Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webhook-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webhook Registration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about-the-api-secret" class="md-nav__link">
+    <span class="md-ellipsis">
+      About the api-secret
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-charge-qr-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Charge QR Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-payment-pix-withdrawal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Payment (Pix Withdrawal)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-the-signature-api-signature-is-generated" class="md-nav__link">
+    <span class="md-ellipsis">
+      How the signature (api-signature) is generated
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apiSignature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How to create an apiSignature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#account-registration-for-api-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Account Registration for API Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-integration-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Integration Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Integration Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webhook-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webhook Registration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about-the-api-secret" class="md-nav__link">
+    <span class="md-ellipsis">
+      About the api-secret
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-charge-qr-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Charge QR Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-payment-pix-withdrawal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Payment (Pix Withdrawal)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-the-signature-api-signature-is-generated" class="md-nav__link">
+    <span class="md-ellipsis">
+      How the signature (api-signature) is generated
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="how-to-integrate-our-api">How to integrate our API</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Have a <strong>registered user</strong> with an <strong>active account</strong>.</li>
+</ul>
+<hr />
+<h2 id="account-registration-for-api-usage">Account Registration for API Usage</h2>
+<ol>
+<li>Log in to the platform with your <strong>username</strong> and <strong>password</strong>.</li>
+<li>Navigate to the <strong>Accounts</strong> menu and click the <code>Register</code> button.</li>
+<li>In the registration form:</li>
+<li>Provide a <strong>reference name</strong> f or the account.</li>
+<li>Provide a <strong>valid Pix key</strong> (from another institution).</li>
+<li>This Pix key will be used for <strong>account validation</strong>.</li>
+</ol>
+<p>After registration, the user will have access to the <strong>account identifier</strong>, which will be used in requests for:</p>
+<ul>
+<li>Generating charges (QR Code)</li>
+<li>Pix payments</li>
+</ul>
+<hr />
+<h2 id="user-integration-settings">User Integration Settings</h2>
+<h3 id="webhook-registration">Webhook Registration</h3>
+<ol>
+<li>Go to the <strong>Integrations</strong> menu and click <code>Register</code>.</li>
+<li>In the form, provide:</li>
+<li>Type: <code>webhook for deposits</code>, <code>webhook for withdrawals</code>, or <code>API key</code></li>
+<li>Enable/Disable the integration</li>
+<li>Name and ID (for reference only)</li>
+</ol>
+<p><strong>Notes:</strong>
+- For integrations that <strong>only generate charges</strong> (QR Code), it is <strong>not necessary</strong> to register a withdrawal webhook or API key.
+- After registration, the <strong>api-secret</strong> will be displayed.
+<strong>Copy and store it securely</strong>, as <strong>it will not be shown again</strong>.</p>
+<h3 id="about-the-api-secret">About the api-secret</h3>
+<ul>
+<li>The <code>api-secret</code> is used to <strong>validate webhook messages</strong> via a <strong>unique signature</strong>.</li>
+<li>For integrations with <strong>withdrawals via API</strong>, it is mandatory to:</li>
+<li>Register the <strong>withdrawal webhook URL</strong></li>
+<li>Create an <strong>API key</strong></li>
+<li>Refer to: <a href="https://api.pixease.reset-bank.com/how-to-sign">How to generate the signature</a></li>
+</ul>
+<hr />
+<h2 id="api-integration">API Integration</h2>
+<h3 id="generate-charge-qr-code">Generate Charge QR Code</h3>
+<ul>
+<li>
+<p>Test it using the Swagger documentation:
+  <a href="https://api.pixease.reset-bank.com/api#/deposit/DepositController_create">🔗 Generate Charge (Swagger)</a></p>
+</li>
+<li>
+<p>When the customer completes the payment, a <strong>confirmation webhook</strong> will be sent to the registered URL.</p>
+</li>
+</ul>
+<hr />
+<h3 id="request-payment-pix-withdrawal">Request Payment (Pix Withdrawal)</h3>
+<ul>
+<li>
+<p>Test it using the Swagger documentation:
+  <a href="https://api.pixease.reset-bank.com/api#/withdrawal/WithdrawalController_create">🔗 Request Payment (Swagger)</a></p>
+</li>
+<li>
+<p>Some endpoints require <strong>authentication</strong>, which can be done in two ways:</p>
+</li>
+<li>Providing a <strong>Bearer Token</strong></li>
+<li>Using an <strong>API key + signature</strong></li>
+</ul>
+<p>Obtain the token through login:
+<a href="https://api.pixease.reset-bank.com/api#/auth/AuthController_signIn">🔗 Login (Swagger)</a></p>
+<p>Refer to the input/output schemas at the end of the Swagger documentation in the <code>schemas</code> section.
+For this case, see the schema: <code>CreateWithdrawalDto</code>.</p>
+<hr />
+<h2 id="important-information">Important Information</h2>
+<ul>
+<li>In case of webhook delivery failure:</li>
+<li>A retry will be attempted after <strong>1.5 seconds</strong></li>
+<li>Attempts will continue until delivery succeeds</li>
+</ul>
+<h3 id="how-the-signature-api-signature-is-generated">How the signature (api-signature) is generated</h3>
+<pre><code class="language-js">const content = JSON.stringify(data);
+const signature = crypto
+  .createHmac('sha256', user.api_secret)
+  .update(content)
+  .digest('hex');
+</code></pre>
+<ul>
+<li>The signature must be sent in the <strong>header</strong> <code>api-signature</code></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
