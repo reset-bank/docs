@@ -6,7 +6,7 @@ theme:
   name: material
   language: en
   favicon: images/favicon.png
-  logo: assets/logo.png
+  logo: images/logo.png
   features:
     - navigation.top
 
@@ -15,3 +15,7 @@ plugins:
 
 extra:
   homepage: https://reset-bank.com/docs
+
+markdown_extensions:
+  - def_list
+  - footnotes

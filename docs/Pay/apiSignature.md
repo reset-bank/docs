@@ -1,32 +1,29 @@
-# How to create an apiSignature
+# How to create an API signature
 
-## What is an apiSignature?
+## What is an API signature?
 
-An `apiSignature` is a digital signature generated from the data of your request and the secret key associated with your API account. It is used to verify that the request is authentic and has not been modified during transmission.
+An `API signature` is a digital signature generated from the data of your request and the secret key associated with your API account. It is used to verify that the request is authentic and has not been modified during transmission.
 
-## How to create an apiSignature?
+## How to create an API signature?
 
 1. **Gather Request Data:**
-   - HTTP Method (GET, POST, etc.)
-   - API URL Path (e.g., `/api/users`)
-   - Request Expiration Time (in seconds since the Unix Epoch)
-   - Request Body (if any)
-
-2. **Combine the Data:**
-   - Concatenate the data into a single string.
-
-3. **Create the apiSignature:**
-   - Use a hash algorithm (like SHA-256) and your API secret key to calculate the signature of the combined string.
+:   
+    - HTTP method (GET, POST, etc.)
+    - API URL Path (e.g., `/api/users`)
+    - Request expiration time (in seconds since the Unix Epoch)
+    - Request body (if any)
+2. **Concatenate the data into a single string.**
+3. **Create the API signature** by using a hash algorithm (like SHA-256) and your API secret key to calculate the signature of the combined string.
 
 ## How to make the Request?
 
-1. **Add the Necessary Headers:**
-   - `api-key`: Your API key provided by the API.
-   - `api-signature`: The `apiSignature` you created.
-   - `api-expires`: The expiration time of the request in seconds since the Unix Epoch.
+1. **Add the following headers:**
+:   
+    - `api-key`: Your API key provided by the API.
+    - `api-signature`: The `API signature` you created.
+    - `api-expires`: The expiration time of the request in seconds since the Unix Epoch.
 
-2. **Send the Request:**
-   - Use your favorite HTTP library (like Axios in JavaScript) to send the request to the API server.
+2. **Send the Request**. Use your favorite HTTP library (like Axios in JavaScript) to send the request to the API server.
 
 ## Complete example in JavaScript (Node.js)
 
