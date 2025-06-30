@@ -14,13 +14,15 @@
         <link rel="prev" href="../apiIntegration/">
       
       
+        <link rel="next" href="../createFirstDepositWithdrawal/">
+      
       
       <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>How to create an apiSignature - Reset Docs</title>
+        <title>How to create an API signature - Reset Docs</title>
       
     
     
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-create-an-apisignature" class="md-skip">
+        <a href="#how-to-create-an-api-signature" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +82,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://reset-bank.com/docs" title="Reset Docs" class="md-header__button md-logo" aria-label="Reset Docs" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -97,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to create an apiSignature
+              How to create an API signature
             
           </span>
         </div>
@@ -137,7 +139,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://reset-bank.com/docs" title="Reset Docs" class="md-nav__button md-logo" aria-label="Reset Docs" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     Reset Docs
@@ -237,12 +239,35 @@
   
   
     <li class="md-nav__item">
+      <a href="../accountRegistration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Account Registration for API Usage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../apiIntegration/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    How to integrate our API
+    How to create a API key and use Webhook URLs
     
   </span>
   
@@ -274,7 +299,7 @@
   
   
   <span class="md-ellipsis">
-    How to create an apiSignature
+    How to create an API signature
     
   </span>
   
@@ -287,7 +312,7 @@
   
   
   <span class="md-ellipsis">
-    How to create an apiSignature
+    How to create an API signature
     
   </span>
   
@@ -310,18 +335,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-an-apisignature" class="md-nav__link">
+  <a href="#what-is-an-api-signature" class="md-nav__link">
     <span class="md-ellipsis">
-      What is an apiSignature?
+      What is an API signature?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-create-an-apisignature_1" class="md-nav__link">
+  <a href="#how-to-create-an-api-signature_1" class="md-nav__link">
     <span class="md-ellipsis">
-      How to create an apiSignature?
+      How to create an API signature?
     </span>
   </a>
   
@@ -349,6 +374,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../createFirstDepositWithdrawal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create your first Deposit and Withdrawal
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -388,18 +436,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-an-apisignature" class="md-nav__link">
+  <a href="#what-is-an-api-signature" class="md-nav__link">
     <span class="md-ellipsis">
-      What is an apiSignature?
+      What is an API signature?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-create-an-apisignature_1" class="md-nav__link">
+  <a href="#how-to-create-an-api-signature_1" class="md-nav__link">
     <span class="md-ellipsis">
-      How to create an apiSignature?
+      How to create an API signature?
     </span>
   </a>
   
@@ -439,41 +487,42 @@
 
 
 
-<h1 id="how-to-create-an-apisignature">How to create an apiSignature</h1>
-<h2 id="what-is-an-apisignature">What is an apiSignature?</h2>
-<p>An <code>apiSignature</code> is a digital signature generated from the data of your request and the secret key associated with your API account. It is used to verify that the request is authentic and has not been modified during transmission.</p>
-<h2 id="how-to-create-an-apisignature_1">How to create an apiSignature?</h2>
+<h1 id="how-to-create-an-api-signature">How to create an API signature</h1>
+<h2 id="what-is-an-api-signature">What is an API signature?</h2>
+<p>An <code>API signature</code> is a digital signature generated from the data of your request and the secret key associated with your API account. It is used to verify that the request is authentic and has not been modified during transmission.</p>
+<h2 id="how-to-create-an-api-signature_1">How to create an API signature?</h2>
 <ol>
-<li><strong>Gather Request Data:</strong></li>
-<li>HTTP Method (GET, POST, etc.)</li>
+<li>
+<dl>
+<dt><strong>Gather Request Data:</strong></dt>
+<dd></dd>
+</dl>
+<ul>
+<li>HTTP method (GET, POST, etc.)</li>
 <li>API URL Path (e.g., <code>/api/users</code>)</li>
-<li>Request Expiration Time (in seconds since the Unix Epoch)</li>
-<li>
-<p>Request Body (if any)</p>
+<li>Request expiration time (in seconds since the Unix Epoch)</li>
+<li>Request body (if any)</li>
+</ul>
 </li>
-<li>
-<p><strong>Combine the Data:</strong></p>
-</li>
-<li>
-<p>Concatenate the data into a single string.</p>
-</li>
-<li>
-<p><strong>Create the apiSignature:</strong></p>
-</li>
-<li>Use a hash algorithm (like SHA-256) and your API secret key to calculate the signature of the combined string.</li>
+<li><strong>Concatenate the data into a single string.</strong></li>
+<li><strong>Create the API signature</strong> by using a hash algorithm (like SHA-256) and your API secret key to calculate the signature of the combined string.</li>
 </ol>
 <h2 id="how-to-make-the-request">How to make the Request?</h2>
 <ol>
-<li><strong>Add the Necessary Headers:</strong></li>
+<li>
+<dl>
+<dt><strong>Add the following headers:</strong></dt>
+<dd></dd>
+</dl>
+<ul>
 <li><code>api-key</code>: Your API key provided by the API.</li>
-<li><code>api-signature</code>: The <code>apiSignature</code> you created.</li>
-<li>
-<p><code>api-expires</code>: The expiration time of the request in seconds since the Unix Epoch.</p>
+<li><code>api-signature</code>: The <code>API signature</code> you created.</li>
+<li><code>api-expires</code>: The expiration time of the request in seconds since the Unix Epoch.</li>
+</ul>
 </li>
 <li>
-<p><strong>Send the Request:</strong></p>
+<p><strong>Send the Request</strong>. Use your favorite HTTP library (like Axios in JavaScript) to send the request to the API server.</p>
 </li>
-<li>Use your favorite HTTP library (like Axios in JavaScript) to send the request to the API server.</li>
 </ol>
 <h2 id="complete-example-in-javascript-nodejs">Complete example in JavaScript (Node.js)</h2>
 <pre><code class="language-ts">const axios = require('axios');

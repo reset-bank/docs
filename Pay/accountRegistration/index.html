@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://reset-bank.com/docs/Pay/aGettingStarted/">
+        <link rel="canonical" href="https://reset-bank.com/docs/Pay/accountRegistration/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../aGettingStarted/">
       
       
-        <link rel="next" href="../accountRegistration/">
+        <link rel="next" href="../apiIntegration/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Getting Started - Reset Docs</title>
+        <title>Account Registration for API Usage - Reset Docs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#account-registration-for-api-usage" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              Account Registration for API Usage
             
           </span>
         </div>
@@ -213,6 +213,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../aGettingStarted/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -230,7 +253,7 @@
   
   
   <span class="md-ellipsis">
-    Getting Started
+    Account Registration for API Usage
     
   </span>
   
@@ -243,7 +266,7 @@
   
   
   <span class="md-ellipsis">
-    Getting Started
+    Account Registration for API Usage
     
   </span>
   
@@ -274,51 +297,10 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#core-topics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Topics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environments
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../accountRegistration/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Account Registration for API Usage
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -435,24 +417,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#core-topics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Topics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Environments
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -469,36 +433,37 @@
 
 
 
-<h1 id="getting-started">Getting Started</h1>
-<p>Welcome to the beginning of your journey with <strong>Reset</strong>.</p>
+<h1 id="account-registration-for-api-usage">Account Registration for API Usage</h1>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>Before anything, ensure you have a valid <strong>user account</strong> and access to the Reset <strong>sandbox</strong> or <strong>production environment</strong></p>
-<hr />
-<h2 id="core-topics">Core Topics</h2>
 <ul>
-<li><a href="../apiIntegration/"><code>How to create an API key and use Webhook URLs</code></a></li>
-<li><a href="../createFirstDepositWithdrawal/"><code>Create your first Deposit and Withdrawal</code></a></li>
+<li>Have a <strong>registered user</strong>.</li>
 </ul>
 <hr />
-<h2 id="environments">Environments</h2>
-<table>
-<thead>
-<tr>
-<th>Environment</th>
-<th>URL</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Production</td>
-<td>https://api.pixease.reset-bank.com/api</td>
-<td>Live transactions</td>
-</tr>
-</tbody>
-</table>
-<p>Once you're familiar with these topics, you'll be ready to start building and testing our endpoints with confidence.</p>
-<p>Need more help? <a href="mailto:suporte@reset-bank.com">Contact support</a>.</p>
+<ol>
+<li>Log in to the platform with your <strong>username</strong> and <strong>password</strong>.</li>
+<li>
+<dl>
+<dt>Navigate to the <strong>Accounts</strong> menu and click the <code>Register (Cadastrar)</code> button.</dt>
+<dd><img alt="" src="/docs/images/Pay/account-register-use-api/1-cadastrar.png" /></dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>Provide a <strong>reference name</strong> and a valid PIX key for the account. This Pix key will be used for <strong>account validation</strong>.</dt>
+<dd><img alt="" src="/docs/images/Pay/account-register-use-api/2-cadastrar-chave.png" /></dd>
+</dl>
+</li>
+</ol>
+<p>After registration, the user will have access to the <strong>account identifier</strong>, which will be used in requests for:</p>
+<ul>
+<li>Generating charges (QR Code)</li>
+<li>Pix payments</li>
+</ul>
+<dl>
+<dt>You can get the account identifier here:</dt>
+<dd><img alt="" src="/docs/images/Pay/account-register-use-api/3-atualizar-cadastro.png" /></dd>
+<dd><img alt="" src="/docs/images/Pay/account-register-use-api/4-tela-atualizar-cadastro.png" /></dd>
+</dl>
 
 
 
