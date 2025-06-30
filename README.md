@@ -2,11 +2,12 @@
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+## Commands / Run
 
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
+* `mkdocs gh-deploy` - Deploy to github.
 
 ## Project Installation
 
@@ -15,6 +16,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ### Installation
 ```sh
+$ sudo apt install mkdocs
 $ pip install mkdocs
 $ pip install mkdocs-material
 $ pip install mkdocs-macros-plugin
