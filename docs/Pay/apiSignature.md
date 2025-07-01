@@ -48,7 +48,7 @@ const headers = {
   'api-expires': expires
 };
 
-const url = `https://{{ PAY_API_URL }}${path}`;
+const url = `{{ PAY_API_URL }}${path}`;
 
 axios.get(url, { headers })
   .then(response => {
