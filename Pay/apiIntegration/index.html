@@ -383,12 +383,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../createFirstDepositWithdrawal/" class="md-nav__link">
+      <a href="../createFirstDeposit/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Create your first Deposit and Withdrawal
+    Create your first Deposit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../createFirstWithdrawal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create your first Withdrawal
     
   </span>
   
@@ -513,20 +536,12 @@
 <hr />
 <p><strong>Notes:</strong></p>
 <ul>
-<li>For integrations that <strong>only generate deposits</strong> (QR Code), it is <strong>not necessary</strong> to register a withdrawal webhook or API key.</li>
-<li>After registration, the <strong>api-secret</strong> (in some cases it will also have an api-key) will be displayed.
-<strong>Copy and store it securely</strong>, as <strong>it will not be shown again</strong>.</li>
+<li>After registration, the <strong>api-secret</strong> will be displayed. <strong>Copy and store it securely</strong>, as <strong>it will not be shown again</strong>.</li>
 </ul>
 <h3 id="about-the-api-secret">About the api-secret</h3>
 <ul>
 <li>The <code>api-secret</code> is used to <strong>validate webhook messages</strong> via a <strong>unique signature</strong>.</li>
-<li>For integrations with <strong>withdrawals via API</strong>, it is mandatory to:
-:<ul>
-<li>Register the <strong>withdrawal webhook URL</strong></li>
-<li>Create an <strong>API key</strong></li>
-</ul>
-</li>
-<li>And don't forget to create your apiSignature (refer to: <a href="../apiSignature/">How to create an apiSignature</a>)</li>
+<li>To learn more about signing authenticated requests, see <a href="../apiSignature/">How to create an apiSignature</a></li>
 </ul>
 
 

@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://reset-bank.com/docs/Pay/createFirstDepositWithdrawal/">
+        <link rel="canonical" href="https://reset-bank.com/docs/Pay/createFirstDeposit/">
       
       
         <link rel="prev" href="../apiSignature/">
       
+      
+        <link rel="next" href="../createFirstWithdrawal/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Create your first Deposit and Withdrawal - Reset Docs</title>
+        <title>Create your first Deposit - Reset Docs</title>
       
     
     
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#create-your-first-deposit-and-withdrawal" class="md-skip">
+        <a href="#create-your-first-deposit" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Create your first Deposit and Withdrawal
+              Create your first Deposit
             
           </span>
         </div>
@@ -320,7 +322,7 @@
   
   
   <span class="md-ellipsis">
-    Create your first Deposit and Withdrawal
+    Create your first Deposit
     
   </span>
   
@@ -333,7 +335,7 @@
   
   
   <span class="md-ellipsis">
-    Create your first Deposit and Withdrawal
+    Create your first Deposit
     
   </span>
   
@@ -374,15 +376,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#request-payment-pix-withdrawal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Request Payment (Pix Withdrawal)
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -416,6 +409,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../createFirstWithdrawal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Create your first Withdrawal
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -473,15 +489,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#request-payment-pix-withdrawal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Request Payment (Pix Withdrawal)
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -527,41 +534,28 @@
 
 
 
-<h1 id="create-your-first-deposit-and-withdrawal">Create your first Deposit and Withdrawal</h1>
+<h1 id="create-your-first-deposit">Create your first Deposit</h1>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>Have a <strong>apiSignature</strong> (refer to <a href="../apiSignature/">How to create an apiSignature</a>).</li>
-<li>Have a <strong>registered user</strong> with an <strong>active account</strong> (refer to <a href="../accountRegistration/">Account Registration for API Usage</a>) or a <strong>API key and secret</strong> (refer to <a href="../apiIntegration/">How to create a API key and use Webhook URLs</a>).</li>
+<li>Have a <strong>registered user</strong> with an <strong>active account</strong> (refer to <a href="../accountRegistration/">Account Registration for API Usage</a>).</li>
 </ul>
 <hr />
 <h3 id="create-a-deposit-qr-code">Create a Deposit (QR Code)</h3>
 <ul>
 <li>
-<p>Create it using the Swagger documentation: <a href="https://api.pixease.reset-bank.com/api#/deposit/DepositController_create">🔗 Generate Charge (Swagger)</a><sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>Create it using the Swagger documentation: <a href="https://api.pixease.reset-bank.com/api#/deposit/DepositController_create">🔗 Generate Deposit (Swagger)</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 </li>
 <li>
-<p>When the customer completes the payment, a <strong>confirmation webhook</strong> will be sent to the registered URL.</p>
+<p>When the customer completes the payment, a <strong>confirmation webhook</strong> will be sent to the registered URL (refer to <a href="../apiIntegration/">How to create a API key and use Webhook URLs</a>).</p>
 </li>
 </ul>
-<hr />
-<h3 id="request-payment-pix-withdrawal">Request Payment (Pix Withdrawal)</h3>
-<ul>
-<li>Create it using the Swagger documentation: <a href="https://api.pixease.reset-bank.com/api#/withdrawal/WithdrawalController_create">🔗 Request Payment (Swagger)</a><sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
-<li>
-<dl>
-<dt>Some endpoints require <strong>authentication</strong>, which can be done in two ways:</dt>
-<dd></dd>
-</dl>
-<ul>
-<li>Providing a <strong>Bearer Token</strong></li>
-<li>Using an <strong>API key + signature</strong></li>
-</ul>
-</li>
-</ul>
-<p>Obtain the token through <a href="https://api.pixease.reset-bank.com/api#/auth/AuthController_signIn">🔗 Login (Swagger)</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
-<p>Refer to the input/output schemas at the end of the Swagger documentation in the <code>schemas</code> section.</p>
 <hr />
 <h2 id="important-information">Important Information</h2>
+<ul>
+<li>Refer to the input/output schemas at the end of the Swagger documentation in the <code>schemas</code> section.</li>
+<li>For integrations that <strong>only generate deposits</strong> (QR Code), it is <strong>not necessary</strong> to register a withdrawal webhook or API key.</li>
+</ul>
 <h3 id="in-case-of-webhook-delivery-failure">In case of webhook delivery failure:</h3>
 <dl>
 <dd>
@@ -575,7 +569,7 @@
 <hr />
 <ol>
 <li id="fn:1">
-<p>The accepted interface for this and other endpoints is listed at the bottom of the Swagger page, under the "schemas" section.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>The accepted interface for this and other endpoints is listed at the bottom of the Swagger page, under the "schemas" section.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
