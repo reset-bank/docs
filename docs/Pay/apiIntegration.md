@@ -22,17 +22,11 @@
 
 **Notes:**
 
-- For integrations that **only generate deposits** (QR Code), it is **not necessary** to register a withdrawal webhook or API key.
-- After registration, the **api-secret** (in some cases it will also have an api-key) will be displayed.
-**Copy and store it securely**, as **it will not be shown again**.
+- After registration, the **api-secret** will be displayed. **Copy and store it securely**, as **it will not be shown again**.
 
 ### About the api-secret
 - The `api-secret` is used to **validate webhook messages** via a **unique signature**.
-- For integrations with **withdrawals via API**, it is mandatory to:
-:
-     - Register the **withdrawal webhook URL**
-     - Create an **API key**
-- And don't forget to create your apiSignature (refer to: [How to create an apiSignature](apiSignature.md))
+- To learn more about signing authenticated requests, see [How to create an apiSignature](apiSignature.md)
 
 [image1]: /docs/images/Pay/configs-user-integration/1-menu-integracao.png
 [image2]: /docs/images/Pay/configs-user-integration/2-integracao-cadastrar.png
