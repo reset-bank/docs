@@ -11,7 +11,8 @@ Before anything, ensure you have a valid **user account** and access to the {{ C
 ## Core Topics
 
 - [`How to create an API key and use Webhook URLs`](./apiIntegration.md)
-- [`Create your first Deposit and Withdrawal`](./createFirstDepositWithdrawal.md)
+- [`Create your first Deposit`](./createFirstDeposit.md)
+- [`Create your first Withdrawal`](./createFirstWithdrawal.md)
 
 ---
 
