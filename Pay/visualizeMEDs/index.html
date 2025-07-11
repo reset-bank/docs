@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://reset-bank.com/docs/Pay/apiIntegration/">
+        <link rel="canonical" href="https://reset-bank.com/docs/Pay/visualizeMEDs/">
       
       
-        <link rel="prev" href="../accountRegistration/">
+        <link rel="prev" href="../createFirstWithdrawal/">
       
-      
-        <link rel="next" href="../apiSignature/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>How to create a API key and use Webhook URLs - Reset Docs</title>
+        <title>How to visualize MEDs - Reset Docs</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-create-a-api-key-and-use-webhook-urls" class="md-skip">
+        <a href="#how-to-visualize-meds" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to create a API key and use Webhook URLs
+              How to visualize MEDs
             
           </span>
         </div>
@@ -259,32 +257,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    How to create a API key and use Webhook URLs
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../apiIntegration/" class="md-nav__link">
         
   
   
@@ -295,59 +271,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-and-webhook-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      API and Webhook integration
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="API and Webhook integration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#about-the-api-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      About the api-secret
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -426,10 +349,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../visualizeMEDs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    How to visualize MEDs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -440,6 +385,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -487,30 +461,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#api-and-webhook-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      API and Webhook integration
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="API and Webhook integration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#about-the-api-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      About the api-secret
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -527,44 +477,33 @@
 
 
 
-<h1 id="how-to-create-a-api-key-and-use-webhook-urls">How to create a API key and use Webhook URLs</h1>
+<h1 id="how-to-visualize-meds">How to visualize MEDs</h1>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>Have a <strong>registered user</strong> with an <strong>active account</strong> (refer to <a href="../accountRegistration/">Account Registration for API Usage</a>).</li>
 </ul>
 <hr />
-<h2 id="api-and-webhook-integration">API and Webhook integration</h2>
+<p>Users will be able to view cases with MED status set to open, returned, or canceled, as shown in the screenshot below.</p>
+<p><img alt="" src="/docs/images/Pay/meds/meds-1.png" /></p>
+<p>To do so, simply:</p>
 <ol>
+<li>Navigate to <strong>Pix &gt; Payments</strong></li>
+<li>Apply a filter.</li>
+<li>Select the "<strong>Refund</strong>" (Estorno) method</li>
+<li>Clear the "Status" filters to see all cases, regardless of their status.</li>
+</ol>
+<p><img alt="" src="/docs/images/Pay/meds/meds-2.png" /></p>
+<p>The possible statuses for a Pix MED (refund) are as follows:</p>
+<ul>
 <li>
-<dl>
-<dt>Go to the <strong>Integrations</strong> menu and click <code>Register (Cadastrar)</code>.</dt>
-<dd><img alt="" src="/docs/images/Pay/configs-user-integration/1-menu-integracao.png" />
-<img alt="" src="/docs/images/Pay/configs-user-integration/2-integracao-cadastrar.png" /></dd>
-</dl>
+<p><strong>Awaiting Payment</strong> (Pendente): The amount is locked in the user's account while the request is under review.</p>
 </li>
 <li>
-<dl>
-<dt>In the form, provide:</dt>
-<dd></dd>
-</dl>
-<ol>
-<li>Name and ID (for reference only) </li>
-<li>Type: <code>webhook for deposits</code>, <code>webhook for withdrawals</code>, or <code>API key</code></li>
-<li>Webhook URL (if it is a webhook)</li>
-<li>Enable/Disable the integration
-<img alt="" src="/docs/images/Pay/configs-user-integration/4-cadastrar-chave-integracao.png" /></li>
-</ol>
+<p><strong>Paid</strong> (Pago): If the defense is unsuccessful, the amount is refunded to the claimant.</p>
 </li>
-</ol>
-<hr />
-<p><strong>Notes:</strong></p>
-<ul>
-<li>After registration, the <strong>api-secret</strong> will be displayed. <strong>Copy and store it securely</strong>, as <strong>it will not be shown again</strong>.</li>
-</ul>
-<h3 id="about-the-api-secret">About the api-secret</h3>
-<ul>
-<li>The <code>api-secret</code> is used to <strong>validate webhook messages</strong> via a <strong>unique signature</strong>.</li>
-<li>To learn more about signing authenticated requests, see <a href="../apiSignature/">How to create an apiSignature</a></li>
+<li>
+<p><strong>Rejected</strong> (Rejeitado): The refund request was denied, and the amount is released back to the user (i.e., it is not refunded to the claimant). <em>This status label may be slightly ambiguous but refers to the rejection of the refund request</em>.</p>
+</li>
 </ul>
 
 
