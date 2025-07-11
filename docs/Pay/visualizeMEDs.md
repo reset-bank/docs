@@ -8,7 +8,12 @@ Users will be able to view cases with MED status set to open, returned, or cance
 
 ![][image1]
 
-To do so, simply navigate to **Pix > Payments**, apply a filter, select the "**Refund**" (Estorno) method, and clear the "Status" filters — in other words, the system will return all cases regardless of their status.
+To do so, simply:
+
+1. Navigate to **Pix > Payments**
+2. Apply a filter.
+3. Select the "**Refund**" (Estorno) method
+4. Clear the "Status" filters to see all cases, regardless of their status.
 
 ![][image2]
 
