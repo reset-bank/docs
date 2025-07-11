@@ -4,7 +4,7 @@
 
 ---
 
-Users will be able to view cases with MED status set to open, returned, or canceled, as shown in the screenshot below.
+Users will be able to view cases with MED status set to awaiting payment, paid, or rejected, as shown in the screenshot below.
 
 ![][image1]
 
